@@ -17,19 +17,19 @@
 }
 
 body[data-theme='light'] {
-    --color-black: #FFFFFF;
-    --color-dark-gray: #E9ECEF;
-    --color-medium-gray: #CED4DA;
-    --color-light-gray: #6C757D;
-    --color-lightest-gray: #212529;
-    --gold-accent: #B8860B;
-    --bg-primary: #FFFFFF;
-    --bg-secondary: #F8F9FA;
-    --text-primary: #212529;
-    --text-secondary: #6C757D;
+    --color-black: #212529;
+    --color-dark-gray: #343a40;
+    --color-medium-gray: #6c757d;
+    --color-light-gray: #adb5bd;
+    --color-lightest-gray: #f8f9fa;
+    --gold-accent: #c59d34;
+    --bg-primary: #ffffff; /* White background */
+    --bg-secondary: #ffffff; /* White background */
+    --text-primary: #212529; /* This was the issue */
+    --text-secondary: #6c757d;
     --accent-color: var(--gold-accent);
-    --border-color: rgba(0, 0, 0, 0.1);
-    --card-bg: rgba(0, 0, 0, 0.02);
+    --border-color: #dee2e6;
+    --card-bg: #f8f9fa; /* A very light gray for cards to distinguish them from the white background */
 }
 
 * {
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar */
 #desktop-navbar, #mobile-navbar {
-    background: rgba(5, 5, 5, 0.85);
+    background-color: -var(--bg-secondary);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 0;
@@ -103,19 +103,33 @@ h1, h2, h3, h4, h5, h6 {
 #mobile-navbar { bottom: 0; top: auto; border-top: 1px solid var(--border-color); border-bottom: none; }
 
 body[data-theme='light'] #desktop-navbar, body[data-theme='light'] #mobile-navbar {
-    background: rgba(255, 255, 255, 0.85);
+    background: transparent;
 }
 
 .navbar-brand { font-size: 1.8rem; font-weight: 700; color: var(--accent-color); letter-spacing: 2px; text-decoration: none; }
 .nav-link { color: var(--text-primary); text-transform: uppercase; font-weight: 500; letter-spacing: 1px; margin: 0 15px; transition: all 0.3s ease; position: relative; text-decoration: none; }
 .nav-link::after { content: ''; position: absolute; bottom: -5px; left: 50%; width: 0; height: 2px; background: var(--accent-color); transition: all 0.3s ease; transform: translateX(-50%); }
 .nav-link:hover::after { width: 100%; }
+.d-flex.align-items-center > .d-flex.align-items-center {
+    border-left: 1px solid var(--border-color);
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
 .nav-link:hover { color: var(--accent-color); }
+
+.nav-link .icon {
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover .icon {
+    stroke: var(--accent-color);
+}
 
 #mobile-navbar .nav-link { padding: 0.5rem; margin: 0; }
 
 /* Theme Switcher */
-.theme-switcher-btn { background: transparent; border: 1px solid var(--border-color); color: var(--text-primary); width: 40px; height: 40px; border-radius: 50%; cursor: pointer; margin-left: 20px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+.theme-switcher-btn { background: var(--accent-color); border: none; color: var(--bg-primary); width: 40px; height: 40px; border-radius: 50%; cursor: pointer; margin-left: 20px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
 .theme-switcher-btn .icon { position: absolute; transition: transform 0.4s ease-out; }
 body[data-theme='dark'] .icon-sun { transform: translateY(100%); }
 body[data-theme='light'] .icon-moon { transform: translateY(-100%); }
@@ -251,7 +265,7 @@ body[data-theme='light'] .footer { background-color: var(--bg-secondary); }
 }
 
 #certifications {
-    background-image: url('https://images.unsplash.com/photo-1580234811497-9df7fd2f337e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
+    background-image: url('https://images.unsplash.com/photo-1583521224858-69343f000938?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80');
 }
 
 .cta-section {
@@ -269,4 +283,12 @@ body[data-theme='light'] .footer { background-color: var(--bg-secondary); }
 }
 @media (min-width: 769px) {
     #mobile-navbar { display: none !important; }
+}
+
+body[data-theme='light'] #desktop-navbar, body[data-theme='light'] #mobile-navbar {
+    background-color: #ffffff !important;
+}
+
+body[data-theme='light'] .nav-link {
+    color: #000000 !important;
 }

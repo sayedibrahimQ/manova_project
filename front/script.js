@@ -120,3 +120,49 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+// YouTube Player API for hero video background
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('youtube-player', {
+        videoId: 'dG0wKMuKybs', // A suitable stock video
+        playerVars: {
+            'autoplay': 1,
+            'controls': 0,
+            'rel': 0,
+            'showinfo': 0,
+            'mute': 1,
+            'loop': 1,
+            'playlist': 'dG0wKMuKybs' // Required for loop to work
+        },
+        events: {
+            'onReady': onPlayerReady
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    event.target.playVideo();
+    event.target.setPlaybackQuality('highres');
+
+    // Stop video when not in view
+    const heroSection = document.getElementById('hero');
+    const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                event.target.playVideo();
+            } else {
+                event.target.pauseVideo();
+            }
+        });
+    }, { threshold: 0.1 }); // Adjust threshold as needed
+
+    if (heroSection) {
+        videoObserver.observe(heroSection);
+    }
+}

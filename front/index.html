@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manova - Exquisite Living</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body data-theme="dark">
+
+    <!-- Desktop Navbar -->
+    <nav id="desktop-navbar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a class="navbar-brand" href="#hero">MANOVA</a>
+                <div class="d-flex align-items-center">
+                    <a class="nav-link" href="#featured-collections">Collections</a>
+                    <a class="nav-link" href="#about-brand">About</a>
+                    <a class="nav-link" href="#bestsellers">Bestsellers</a>
+                    <a class="nav-link" href="#testimonials">Reviews</a>
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                    <a class="nav-link" href="#journal">Journal</a>
+                    <a class="nav-link" href="#cta">Contact</a>
+                    <button id="theme-switcher" class="theme-switcher-btn">
+                        <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav id="mobile-navbar">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-around w-100">
+                <a class="nav-link" href="#featured-collections"><svg class="icon icon-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg></a>
+                <a class="nav-link" href="#about-brand"><svg class="icon icon-info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></a>
+                <a class="nav-link" href="#hero"><svg class="icon icon-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></a>
+                <a class="nav-link" href="#bestsellers"><svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></a>
+                <a class="nav-link" href="#cta"><svg class="icon icon-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-video-section">
+        <div id="youtube-player" class="hero-video-background"></div>
+        <div class="container">
+            <div class="hero-content animated fade-in">
+                <h1 class="hero-title">Experience Exquisite Living</h1>
+                <p class="lead hero-subtitle">Where unparalleled design meets timeless elegance</p>
+                <div class="mt-4">
+                    <a href="#featured-collections" class="btn-premium me-3">Discover Our World</a>
+                    <a href="#process" class="btn-outline-premium">Our Process</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6 mb-4"><div class="trust-indicator animated"><div class="trust-icon"><svg class="icon icon-xl icon-award" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 17 17 23 15.79 13.88"></polyline></svg></div><h4 class="stats-counter">25+</h4><p>Years of Excellence</p></div></div>
+                <div class="col-md-3 col-6 mb-4"><div class="trust-indicator animated" style="animation-delay: 0.1s;"><div class="trust-icon"><svg class="icon icon-xl icon-users" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><h4 class="stats-counter">5000+</h4><p>Satisfied Clients</p></div></div>
+                <div class="col-md-3 col-6 mb-4"><div class="trust-indicator animated" style="animation-delay: 0.2s;"><div class="trust-icon"><svg class="icon icon-xl icon-globe" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 18 15.3 15.3 0 0 1-8 0 15.3 15.3 0 0 1 4-18z"></path></svg></div><h4 class="stats-counter">50+</h4><p>Countries Served</p></div></div>
+                <div class="col-md-3 col-6 mb-4"><div class="trust-indicator animated" style="animation-delay: 0.3s;"><div class="trust-icon"><svg class="icon icon-xl icon-shield" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div><h4 class="stats-counter">100%</h4><p>Satisfaction Guarantee</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections Section -->
+    <section id="featured-collections" class="section bg-dark-section">
+        <div class="container">
+            <h2 class="text-center section-title animated">Featured Collections</h2>
+            <p class="text-center lead animated" style="animation-delay: 0.1s;">Curated selections that define luxury living</p>
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4 animated"><div class="collection-card floating"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=300&q=80" alt="The Grandeur Series" class="furniture-img" style="height: 300px;"><div class="p-4"><h3>The Grandeur Series</h3><p>Bold statements for sophisticated spaces. Handcrafted with premium materials and timeless design principles.</p><a href="#" class="btn-premium">View Collection</a></div></div></div>
+                <div class="col-md-6 mb-4 animated" style="animation-delay: 0.2s;"><div class="collection-card floating" style="animation-delay: 3s;"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=300&q=80" alt="Minimalist Elegance" class="furniture-img" style="height: 300px;"><div class="p-4"><h3>Minimalist Elegance</h3><p>Understated luxury, refined simplicity. Clean lines meet exceptional comfort and functionality.</p><a href="#" class="btn-premium">View Collection</a></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Brand Section -->
+    <section id="about-brand" class="section bg-dark-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 animated"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Master Craftsman" class="furniture-img rounded-3 shadow-lg" style="height: 400px;"></div>
+                <div class="col-lg-6 animated" style="animation-delay: 0.2s;">
+                    <h2 class="section-title">Our Legacy of Excellence</h2>
+                    <p class="lead">Manova is born from a passion for exquisite design and unparalleled craftsmanship. For over 25 years, we have meticulously curated and created pieces that transcend trends, becoming timeless heirlooms.</p>
+                    <p>Every material is hand-selected from sustainable sources, every detail perfected by master artisans, ensuring that each Manova creation is not just furniture, but a testament to a life lived beautifully.</p>
+                    <div class="mt-4"><div class="row"><div class="col-6"><h4 class="text-accent">Master Craftsmen</h4><p class="small">Heritage techniques passed down through generations</p></div><div class="col-6"><h4 class="text-accent">Sustainable Materials</h4><p class="small">Responsibly sourced premium materials</p></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process-section">
+        <div class="container">
+            <h2 class="text-center section-title animated text-white">Our Bespoke Process</h2>
+            <p class="text-center lead animated text-white" style="animation-delay: 0.1s;">From concept to creation, excellence in every step</p>
+            <div class="row mt-5">
+                <div class="col-md-3"><div class="process-step animated"><div class="process-number">1</div><h4 class="text-white">Consultation</h4><p class="text-white">Personal design consultation to understand your vision and space requirements</p></div></div>
+                <div class="col-md-3"><div class="process-step animated" style="animation-delay: 0.1s;"><div class="process-number">2</div><h4 class="text-white">Design</h4><p class="text-white">Custom 3D renderings and material selection tailored specifically to you</p></div></div>
+                <div class="col-md-3"><div class="process-step animated" style="animation-delay: 0.2s;"><div class="process-number">3</div><h4 class="text-white">Crafting</h4><p class="text-white">Master artisans bring your vision to life with meticulous precision</p></div></div>
+                <div class="col-md-3"><div class="process-step animated" style="animation-delay: 0.3s;"><div class="process-number">4</div><h4 class="text-white">Delivery</h4><p class="text-white">White-glove delivery and professional installation by our experts</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestseller Section -->
+    <section id="bestsellers" class="section bg-dark-section">
+        <div class="container">
+            <h2 class="text-center section-title animated">Signature Pieces</h2>
+            <p class="text-center lead animated" style="animation-delay: 0.1s;">Discover our most coveted designs</p>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4 animated"><div class="bestseller-card"><img src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250&q=80" alt="The Zenith Lounge" class="furniture-img" style="height: 250px;"><div class="p-4"><h4>The Zenith Lounge</h4><p class="text-accent" style="font-size: 1.3rem; font-weight: 600;">$15,000</p><p class="small">Handcrafted Italian leather, solid oak frame with 25-year warranty</p><a href="#" class="btn-premium btn-sm">View Details</a></div></div></div>
+                <div class="col-md-4 mb-4 animated" style="animation-delay: 0.1s;"><div class="bestseller-card"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250&q=80" alt="The Aura Chandelier" class="furniture-img" style="height: 250px;"><div class="p-4"><h4>The Aura Chandelier</h4><p class="text-accent" style="font-size: 1.3rem; font-weight: 600;">$8,500</p><p class="small">Hand-cut crystal elements, 24k gold accents, custom sizing available</p><a href="#" class="btn-premium btn-sm">View Details</a></div></div></div>
+                <div class="col-md-4 mb-4 animated" style="animation-delay: 0.2s;"><div class="bestseller-card"><img src="https://images.unsplash.com/photo-1611220286429-35515418a8d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=250&q=80" alt="The Obsidian Desk" class="furniture-img" style="height: 250px;"><div class="p-4"><h4>The Obsidian Desk</h4><p class="text-accent" style="font-size: 1.3rem; font-weight: 600;">$12,000</p><p class="small">Premium ebony wood, brass hardware, built-in wireless charging</p><a href="#" class="btn-premium btn-sm">View Details</a></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition Section -->
+    <section class="awards-section">
+        <div class="container">
+            <h2 class="text-center section-title animated text-white">Awards & Recognition</h2>
+            <p class="text-center lead animated text-white" style="animation-delay: 0.1s;">Recognized globally for excellence in design and craftsmanship</p>
+            <div class="row mt-5">
+                <div class="col-md-3 col-6"><div class="award-item animated"><div class="award-badge"><svg class="icon icon-trophy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 17 17 23 15.79 13.88"></polyline></svg></div><h5 class="text-white">Designer of the Year</h5><p class="small text-white">Luxury Living Awards 2024</p></div></div>
+                <div class="col-md-3 col-6"><div class="award-item animated" style="animation-delay: 0.1s;"><div class="award-badge"><svg class="icon icon-star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div><h5 class="text-white">Best Luxury Brand</h5><p class="small text-white">International Design Excellence</p></div></div>
+                <div class="col-md-3 col-6"><div class="award-item animated" style="animation-delay: 0.2s;"><div class="award-badge"><svg class="icon icon-gem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="16.5 3.5 12 2 7.5 3.5 2 7l10 15 10-15z"></polygon><path d="M2 7l10 5 10-5"></path><path d="M12 22V12"></path></svg></div><h5 class="text-white">Craftsmanship Award</h5><p class="small text-white">Heritage Furniture Guild</p></div></div>
+                <div class="col-md-3 col-6"><div class="award-item animated" style="animation-delay: 0.3s;"><div class="award-badge"><svg class="icon icon-leaf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22c4.97 0 9-4.03 9-9s-4.03-9-9-9-9 4.03-9 9 4.03 9 9 9z"></path><path d="M12 2c-3.33 2.02-5 5.45-5 9s1.67 6.98 5 9"></path><path d="M12 2c3.33 2.02 5 5.45 5 9s-1.67 6.98-5 9"></path></svg></div><h5 class="text-white">Sustainability Leader</h5><p class="small text-white">Green Design Certification</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section id="testimonials" class="testimonials-section bg-dark-section">
+        <div class="container">
+            <h2 class="text-center section-title animated">What Our Clients Say</h2>
+            <p class="text-center lead animated" style="animation-delay: 0.1s;">Trusted by discerning homeowners worldwide</p>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4"><div class="testimonial-card animated"><div class="testimonial-text" style="font-style: italic; font-size: 1.1rem; margin-bottom: 2rem;">"Manova transformed our home into a masterpiece. The attention to detail and quality is unmatched. Every piece feels like a work of art that will last generations."</div><div class="d-flex align-items-center justify-content-center"><div class="author-avatar me-3">SR</div><div><h6 class="mb-0">Sarah Richardson</h6><small class="text-muted">Interior Designer, Manhattan</small></div></div></div></div>
+                <div class="col-md-4 mb-4"><div class="testimonial-card animated" style="animation-delay: 0.1s;"><div class="testimonial-text" style="font-style: italic; font-size: 1.1rem; margin-bottom: 2rem;">"The bespoke service exceeded all expectations. From consultation to delivery, everything was flawless. This is what true luxury service looks like."</div><div class="d-flex align-items-center justify-content-center"><div class="author-avatar me-3">MJ</div><div><h6 class="mb-0">Michael James</h6><small class="text-muted">CEO, London</small></div></div></div></div>
+                <div class="col-md-4 mb-4"><div class="testimonial-card animated" style="animation-delay: 0.2s;"><div class="testimonial-text" style="font-style: italic; font-size: 1.1rem; margin-bottom: 2rem;">"Investment pieces that appreciate in both value and beauty. Manova understands that furniture should be an heirloom, not just decor."</div><div class="d-flex align-items-center justify-content-center"><div class="author-avatar me-3">EC</div><div><h6 class="mb-0">Elena Chen</h6><small class="text-muted">Art Collector, Singapore</small></div></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Guarantees Section -->
+    <section id="certifications" class="section bg-gray-section">
+        <div class="container">
+            <h2 class="text-center section-title animated text-white">Certifications & Guarantees</h2>
+            <p class="text-center lead animated text-white" style="animation-delay: 0.1s;">Your assurance of quality and authenticity</p>
+            <div class="row mt-5">
+                <div class="col-md-3 col-6 mb-4"><div class="award-item animated">
+                    <div class="award-badge"><svg class="icon icon-shield" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h6 class="text-white">Lifetime Warranty</h6>
+                    <p class="small text-white">Structural integrity guaranteed</p>
+                </div>
+            </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="award-item animated" style="animation-delay: 0.1s;">
+                        <div class="award-badge">
+                            <svg class="icon icon-certificate" style="border-radius: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+                            <h6 class="text-white">FSC Certified</h6>
+                            <p class="small text-white">Sustainable forestry practices</p>
+                        </div>
+                    </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="award-item animated" style="animation-delay: 0.2s;border-radius: 10px;">
+                        <div class="award-badge">
+                            <svg class="icon icon-handshake" style="border-radius: 10px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h6 class="text-white">White Glove Service</h6>
+                        <p class="small text-white">Premium delivery & setup</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="award-item animated" style="animation-delay: 0.3s;">
+                        <div class="award-badge">
+                            <svg class="icon icon-gem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="16.5 3.5 12 2 7.5 3.5 2 7l10 15 10-15z"></polygon><path d="M2 7l10 5 10-5"></path><path d="M12 22V12"></path></svg>
+                        </div>
+                        <h6 class="text-white">Authenticity Certificate</h6>
+                        <p class="small text-white">Numbered & documented</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Gallery Section -->
+    <section id="gallery" class="section bg-dark-section">
+        <div class="container">
+            <h2 class="text-center section-title animated">Lifestyle Gallery</h2>
+            <p class="text-center lead animated" style="animation-delay: 0.1s;">Inspiration for your distinguished spaces</p>
+            <div class="row mt-5 g-4">
+                <div class="col-md-4 animated"><img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Luxury Living Room" class="furniture-img rounded shadow-sm floating" style="height: 300px;"></div>
+                <div class="col-md-4 animated" style="animation-delay: 0.1s;"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Executive Office" class="furniture-img rounded shadow-sm floating" style="height: 300px; animation-delay: 2s;"></div>
+                <div class="col-md-4 animated" style="animation-delay: 0.2s;"><img src="https://images.unsplash.com/photo-1540932239986-30128078f3c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=300&q=80" alt="Master Bedroom" class="furniture-img rounded shadow-sm floating" style="height: 300px; animation-delay: 4s;"></div>
+                <div class="col-md-6 mt-4 animated"><img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Dining Room Showcase" class="furniture-img rounded shadow-sm floating" style="height: 400px; animation-delay: 1s;"></div>
+                <div class="col-md-6 mt-4 animated" style="animation-delay: 0.1s;"><img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=400&q=80" alt="Penthouse Study" class="furniture-img rounded shadow-sm floating" style="height: 400px; animation-delay: 3s;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal/Blog Section -->
+    <section id="journal" class="section bg-gray-section">
+        <div class="container">
+            <h2 class="text-center section-title animated text-white">From Our Journal</h2>
+            <p class="text-center lead animated text-white" style="animation-delay: 0.1s;">Insights into design, luxury, and craftsmanship</p>
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4 animated"><div class="journal-card"><img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=200&q=80" alt="Bespoke Furniture" class="furniture-img" style="height: 200px;"><div class="p-4"><h5>The Art of Bespoke Furniture</h5><p class="text-muted mb-3">October 26, 2025</p><p class="small">Exploring the intricate process of creating one-of-a-kind pieces that reflect personal style and heritage craftsmanship.</p><a href="#" class="btn-outline-premium btn-sm">Read More</a></div></div></div>
+                <div class="col-md-4 mb-4 animated" style="animation-delay: 0.1s;"><div class="journal-card"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=200&q=80" alt="Intentional Design" class="furniture-img" style="height: 200px;"><div class="p-4"><h5>Designing with Intention</h5><p class="text-muted mb-3">October 19, 2025</p><p class="small">How thoughtful design choices create spaces that enhance daily life and reflect personal values and aspirations.</p><a href="#" class="btn-outline-premium btn-sm">Read More</a></div></div></div>
+                <div class="col-md-4 mb-4 animated" style="animation-delay: 0.2s;"><div class="journal-card"><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&h=200&q=80" alt="Future of Luxury" class="furniture-img" style="height: 200px;"><div class="p-4"><h5>The Future of Luxury Interiors</h5><p class="text-muted mb-3">October 12, 2025</p><p class="small">Exploring emerging trends in sustainable luxury and how technology enhances traditional craftsmanship.</p><a href="#" class="btn-outline-premium btn-sm">Read More</a></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Features Section -->
+    <section class="section bg-dark-section section-bordered-top">
+        <div class="container">
+            <h2 class="text-center section-title animated">Why Choose Manova</h2>
+            <div class="row mt-5">
+                <div class="col-md-3 col-6 mb-4"><div class="trust-indicator animated"><div class="trust-icon"><svg class="icon icon-xl icon-lock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div><h5>Secure Investment</h5><p class="small">Pieces that appreciate in value over time</p></div></div>
+                <div class="col-md-3 col-6 mb-4"><div class="trust-indicator animated" style="animation-delay: 0.1s;"><div class="trust-icon"><svg class="icon icon-xl icon-truck" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg></div><h5>Global Delivery</h5><p class="small">Worldwide shipping with insurance</p></div></div>
+                <div class="col-md-3 col-6 mb-4"><div class="trust-indicator animated" style="animation-delay: 0.2s;"><div class="trust-icon"><svg class="icon icon-xl icon-zap" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div><h5>24/7 Support</h5><p class="small">Dedicated customer service team</p></div></div>
+                <div class="col-md-3 col-6 mb-4"><div class="trust-indicator animated" style="animation-delay: 0.3s;"><div class="trust-icon"><svg class="icon icon-xl icon-refresh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 7 1 13 7 13"></polyline><path d="M20.49 9A9 9 0 0 0 12 5c-2.76 0-5.26 1.12-7.07 2.93L1 12"></path><path d="M3.51 15A9 9 0 0 0 12 19c2.76 0 5.26-1.12 7.07-2.93L23 12"></path></svg></div><h5>Exchange Policy</h5><p class="small">30-day satisfaction guarantee</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press & Media Section -->
+    <section class="section bg-gray-section">
+        <div class="container">
+            <h2 class="text-center section-title animated text-white">Featured In</h2>
+            <p class="text-center lead animated text-white" style="animation-delay: 0.1s;">Recognized by leading design publications</p>
+            <div class="row mt-5 text-center">
+                <div class="col-md-2 col-4 mb-4"><div class="award-item animated"><h6 class="text-accent">Architectural Digest</h6></div></div>
+                <div class="col-md-2 col-4 mb-4"><div class="award-item animated" style="animation-delay: 0.1s;"><h6 class="text-accent">Elle Decor</h6></div></div>
+                <div class="col-md-2 col-4 mb-4"><div class="award-item animated" style="animation-delay: 0.2s;"><h6 class="text-accent">Wallpaper*</h6></div></div>
+                <div class="col-md-2 col-4 mb-4"><div class="award-item animated" style="animation-delay: 0.3s;"><h6 class="text-accent">Dezeen</h6></div></div>
+                <div class="col-md-2 col-4 mb-4"><div class="award-item animated" style="animation-delay: 0.4s;"><h6 class="text-accent">Vogue Living</h6></div></div>
+                <div class="col-md-2 col-4 mb-4"><div class="award-item animated" style="animation-delay: 0.5s;"><h6 class="text-accent">Design Milk</h6></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="section text-center text-white cta-section">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);"></div>
+        <div class="container position-relative">
+            <h2 class="animated text-white" style="font-size: 3.5rem; margin-bottom: 1rem;">Ready to Transform Your Space?</h2>
+            <p class="lead animated" style="animation-delay: 0.1s; font-size: 1.2rem; color: var(--text-secondary);">Connect with our design experts for a personalized consultation or visit our exclusive showroom</p>
+            <div class="mt-5 animated" style="animation-delay: 0.2s;">
+                <a href="#" class="btn-premium btn-lg me-3">Book a Consultation</a>
+                <a href="#" class="btn-outline-premium btn-lg">Visit Showroom</a>
+            </div>
+            <div class="row mt-5 text-center">
+                <div class="col-md-4"><h5 class="text-accent d-flex align-items-center justify-content-center"><svg class="icon me-2 icon-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Showroom</h5><p>123 Design District, Manhattan<br>Open Mon-Sat 10AM-7PM</p></div>
+                <div class="col-md-4"><h5 class="text-accent d-flex align-items-center justify-content-center"><svg class="icon me-2 icon-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Contact</h5><p>+1 (555) 123-LUXURY<br>hello@manova.com</p></div>
+                <div class="col-md-4"><h5 class="text-accent d-flex align-items-center justify-content-center"><svg class="icon me-2 icon-clock" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Response Time</h5><p>24-hour consultation booking<br>Same-day design support</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section bg-dark-section section-bordered-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h3 class="animated">Stay Connected</h3>
+                    <p class="lead animated" style="animation-delay: 0.1s;">Be the first to discover new collections and exclusive events</p>
+                    <div class="mt-4 animated" style="animation-delay: 0.2s;">
+                        <div class="d-flex justify-content-center">
+                            <input type="email" class="form-control me-3 newsletter-input" placeholder="Enter your email address">
+                            <button class="btn-premium">Subscribe</button>
+                        </div>
+                        <p class="small mt-2" style="color: var(--text-secondary);">Join 10,000+ design enthusiasts. Unsubscribe anytime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Form Section -->
+    <section id="contact" class="section bg-dark-section">
+        <div class="container">
+            <h2 class="text-center section-title animated">Get in Touch</h2>
+            <p class="text-center lead animated" style="animation-delay: 0.1s;">Have a question or a project in mind? We'd love to hear from you.</p>
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <form id="contact-form" class="contact-form animated" style="animation-delay: 0.2s;">
+                        <div id="form-response" class="mb-4"></div>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-premium btn-lg">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-accent">MANOVA</h5>
+                    <p class="small">Crafting extraordinary furniture for extraordinary lives since 1999.</p>
+                    <div class="mt-3">
+                        <a href="mailto:hello@manova.com" class="text-accent me-3"><svg class="icon icon-mail" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22 6 12 13 2 6"></polyline></svg></a>
+                        <a href="#" class="text-accent me-3"><svg class="icon icon-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="#" class="text-accent"><svg class="icon icon-instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4"><h6 class="text-accent">Collections</h6><ul class="list-unstyled"><li><a href="#">Grandeur Series</a></li><li><a href="#">Minimalist Elegance</a></li><li><a href="#">Heritage Collection</a></li><li><a href="#">Executive Series</a></li></ul></div>
+                <div class="col-md-2 mb-4"><h6 class="text-accent">Services</h6><ul class="list-unstyled"><li><a href="#">Bespoke Design</a></li><li><a href="#">Interior Consultation</a></li><li><a href="#">White Glove Delivery</a></li><li><a href="#">Restoration Services</a></li></ul></div>
+                <div class="col-md-2 mb-4"><h6 class="text-accent">Company</h6><ul class="list-unstyled"><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li><li><a href="#">Sustainability</a></li></ul></div>
+                <div class="col-md-2 mb-4"><h6 class="text-accent">Support</h6><ul class="list-unstyled"><li><a href="#">Care Guide</a></li><li><a href="#">Warranty</a></li><li><a href="#">Contact</a></li><li><a href="#">FAQ</a></li></ul></div>
+            </div>
+            <hr style="border-color: var(--border-color); margin: 2rem 0;">
+            <div class="text-center">
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">&copy; 2025 Manova. All Rights Reserved. | Privacy Policy | Terms of Service</p>
+                <p class="text-accent" style="font-size: 0.8rem;">Handcrafted with excellence since 1999</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
